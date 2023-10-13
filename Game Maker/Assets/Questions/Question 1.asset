@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strQuestion: Which event is generally considered to be the first belligerent act
     of World War II?
+  strAnswers:
+  - "Germany\u2019s attack on Poland"
+  - "Germany\u2019s attack on Russia"
+  - "Germany\u2019s occupation of Austria"
+  - "Germany\u2019s attack on Britain"
+  intCorrectAnswerIndex: 0
