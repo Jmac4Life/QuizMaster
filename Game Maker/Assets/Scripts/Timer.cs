@@ -7,7 +7,9 @@ public class Timer : MonoBehaviour
     [SerializeField] float fltTimeToCompleteQuestion = 30f;
     [SerializeField] float fltTimeToShowCorrectAnswer = 10f;
 
+    public bool bolLoadNextQuestion;
     public bool isAnswerQuestion = false;
+    public float fltFillFraction;
 
     float fltTimerValue;
     // Update is called once per frame
@@ -16,13 +18,22 @@ public class Timer : MonoBehaviour
         UpdateTimer();
     }
 
+    public void CancelTimer()
+    {
+        fltTimerValue = 0;
+    }
+
     void UpdateTimer()
     {
         fltTimerValue -= Time.deltaTime;
 
         if(isAnswerQuestion)
         {
-            if(fltTimerValue <= 0)
+            if(fltTimerValue > 0)
+            {
+                fltFillFraction = fltTimerValue / fltTimeToCompleteQuestion;
+            }
+            else
             {
                 isAnswerQuestion = false;
                 fltTimerValue = fltTimeToShowCorrectAnswer;
@@ -30,14 +41,19 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            if(fltTimerValue <= 0)
+            if(fltTimerValue > 0)
+            {
+                fltFillFraction = fltTimerValue / fltTimeToShowCorrectAnswer;
+            }
+            else
             {
                 isAnswerQuestion = true;
                 fltTimerValue = fltTimeToCompleteQuestion;
+                bolLoadNextQuestion = true;
             }
         }
 
-        Debug.Log(fltTimerValue);
+        Debug.Log(isAnswerQuestion + ": " + fltTimerValue + " = " + fltFillFraction);
     }
 
 }
