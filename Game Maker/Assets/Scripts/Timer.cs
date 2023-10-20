@@ -8,8 +8,8 @@ public class Timer : MonoBehaviour
     [SerializeField] float fltTimeToShowCorrectAnswer = 10f;
 
     public bool bolLoadNextQuestion;
-    public bool isAnswerQuestion = false;
     public float fltFillFraction;
+    public bool isAnswerQuestion;
 
     float fltTimerValue;
     // Update is called once per frame

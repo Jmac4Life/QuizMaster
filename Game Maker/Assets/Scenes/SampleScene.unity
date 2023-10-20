@@ -516,8 +516,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecac3adb3dcb5c4409be308273f5ba17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fltTimeToCompleteQuestion: 30
-  fltTimeToShowCorrectAnswer: 10
+  fltTimeToCompleteQuestion: 15
+  fltTimeToShowCorrectAnswer: 5
+  bolLoadNextQuestion: 0
+  fltFillFraction: 0
   isAnswerQuestion: 0
 --- !u!4 &923267955
 Transform:
@@ -660,6 +662,7 @@ MonoBehaviour:
   - {fileID: 1940819364}
   defaultAnswerSprite: {fileID: 21300000, guid: 493d9ed3245c7e04589f9f5161831c2c, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: 2c869abbe3ceded40920002063436a0f, type: 3}
+  timerImage: {fileID: 1198958379}
 --- !u!1001 &987223822
 PrefabInstance:
   m_ObjectHideFlags: 0
