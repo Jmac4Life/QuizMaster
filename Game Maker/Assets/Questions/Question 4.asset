@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 4
   m_EditorClassIdentifier: 
   strQuestion: What were the first two western European countries that Germany invaded?
+  strAnswers:
+  - France and Belgium
+  - Norway and Denmark
+  - Switzerland and Liechtenstein
+  - Austria and the Netherlands
+  intCorrectAnswerIndex: 1

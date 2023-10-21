@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 2
   m_EditorClassIdentifier: 
   strQuestion: Which two countries were the first to declare war on Germany?
+  strAnswers:
+  - Italy and Greece
+  - The United States and the USSR
+  - Britain and France
+  - Norway and Denmark
+  intCorrectAnswerIndex: 2

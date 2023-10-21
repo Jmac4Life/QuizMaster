@@ -14,3 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strQuestion: "Which best describes Germany\u2019s standard invasion strategy at
     the beginning of World War II?"
+  strAnswers:
+  - Draw out battles for as long as possible to wear the enemy out
+  - Attack with a combination of speed and overwhelming force
+  - Begin with acts of sabotage behind enemy lines
+  - "Intimidate the enemy by first amassing a large force along the enemy\u2019s
+    border"
+  intCorrectAnswerIndex: 1

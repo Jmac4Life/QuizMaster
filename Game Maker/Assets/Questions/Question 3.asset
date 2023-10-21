@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strQuestion: Against which country did the Soviet Union instigate an armed conflict
     in late 1939?
+  strAnswers:
+  - Hungary
+  - Yugoslavia
+  - Czechoslovakia
+  - Finland
+  intCorrectAnswerIndex: 3
